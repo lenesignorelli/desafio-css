@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css" type="text/css">
+    <title>Meu Site</title>
+</head>
+
+<body class="conteudo">
+    <header>
+        <section class="linha">
+            <img src="./imagens/download (1).jpg" alt="Logo da Empresa" width="200px" />
+            <nav>
+                <ul>
+                    <li><a class="botao" href="inicio.html">Início</a></li>
+                    <li><a class="botao botao-destaque" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main class="sobre">
+        <section class="linha">
+            <article>
+                <h1>Contato</h1>
+                <h2>Landing Page</h2>
+                <p>Preencha os dados ao lado e envie a sua mensagem de contato.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Duis in velit eu erat hendrerit fermentum a eu lorem. 
+                    Quisque facilisis odio eu sagittis consectetur. 
+                    Nulla dapibus commodo lorem.
+                 </p>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Duis in velit eu erat hendrerit fermentum a eu lorem. 
+                    Quisque facilisis odio eu sagittis consectetur. 
+                    Nulla dapibus commodo lorem.
+                 </p>
+            </article>
+                
+            <fieldset>                      
+                <form id="frmInscricao" action="contato.php" method="POST">
+                    <label class="rotulo">Nome:</label><br>
+                    <input class="entrada" type="text" required="required" id="textNome" maxlength="100" size="50"><br><br>
+
+                    <label class="rotulo">Data de Nascimento:</label><br>
+                    <input class="entrada" type="date" required="required" id="textDataNascimento"/><br><br>
+
+                    <label class="rotulo">Celular:</label><br>
+                    <input class="entrada" type="tel" required="required" id="txtCelular" size="50" placeholder="(##) #####-####" maxlength="15"><br><br>
+                        
+                    <label class="rotulo">E-mail:</label><br>
+                    <input class="entrada" type="email" required="required" id="txtEmail" size="50"><br><br>
+
+                    <label class="rotulo">Mensagem:</label><br><br>
+                    <textarea class="entrada mensagem"  cols="50" rows="5" required="required"></textarea><br><br>
+
+                    <input class="botao botao-destaque" type="submit" id="btnEnviar" value="Enviar" />
+                </form>
+            </fieldset> 
+        </section>
+    </main>
+
+    <footer>
+        <ul class="linha">
+            <li>
+                <a href="#">
+                    <img src="./imagens/instag.jpg" alt="Instagram" width="50px"/>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./imagens/twit.jpg" alt="Twitter" width="50px"/>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./imagens/face.jpg" alt="Facebook" width="50px"/>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
